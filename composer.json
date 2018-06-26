@@ -1,0 +1,32 @@
+{
+  "require": {
+    "php":">=5.5.9",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "illuminate/database": "5.0.*",
+    "illuminate/events": "5.0.*",
+    "monolog/monolog": "~1.11",
+    "symfony/debug": "2.6.*",
+    "symfony/var-dumper": "2.6.*",
+    "maximebf/debugbar": "1.*",
+    "symfony/console": "2.7.*",
+    "gregwar/captcha": "1.*"
+  },
+  "autoload" : {
+    "App\\Models\\": "application/models",
+    "classmap": [
+      "application/models",
+      "application/library",
+      "application/controllers",
+      "application/views",
+      "application/plugins",
+      "command/"
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
